@@ -1,0 +1,29 @@
+{
+  "name": "hb-node",
+  "version": "1.0.0",
+  "description": "node project",
+  "main": "entry.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "no"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weihaoqianjin/hb-node.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "huaban",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weihaoqianjin/hb-node/issues"
+  },
+  "homepage": "https://github.com/weihaoqianjin/hb-node#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "log4js": "^5.0.0"
+  }
+}
