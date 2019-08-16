@@ -1,5 +1,5 @@
 module.exports = {
-    port: 8008,
+    port: 8009,
     debug: true,
     log: {
         dir: './log'
