@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 I am branch test
+=======
+I am branch master
+>>>>>>> master
