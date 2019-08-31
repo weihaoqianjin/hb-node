@@ -24,7 +24,7 @@ function getLogger (filename = 'main') {
   }
   let PLConfig = {
     appenders: {
-      type: 'datefile',
+      type: 'dateFile',
       filename: `${logConfig.dir}${delimiter}${filename}${delimiter}${filename}`,
       pattern: '.yyyy-MM-dd.log',
       alwaysIncludePattern: true,
