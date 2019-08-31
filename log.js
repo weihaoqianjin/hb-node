@@ -1,5 +1,7 @@
 let logConfig = require('./config').log
 let log4js = require('log4js')
+let isWindows = require('./config').isWindows()
+let delimiter  = isWindows ? '\\' : '/'
 
 function getLogger (filename = 'main') {
   let configure = {
@@ -23,7 +25,7 @@ function getLogger (filename = 'main') {
   let PLConfig = {
     appenders: {
       type: 'datefile',
-      filename: `${logConfig.dir}\\${filename}\\${filename}`,
+      filename: `${logConfig.dir}${delimiter}${filename}${delimiter}${filename}`,
       pattern: '.yyyy-MM-dd.log',
       alwaysIncludePattern: true,
       layout: {
