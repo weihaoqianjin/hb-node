@@ -1,14 +1,18 @@
+let gfunc = require('./gfunc.js')
 module.exports = {
     'getOrderData': {
         id: 'getOrderData',
         type: 'json',
         forwardUrl: '/tctDoorApp?actn=checkDoorStatus',
-        enter (req, res, next) {
-            next()
+        logger: true,
+        enter (req, res) {
+            // return {stop: true, result: {
+            //     msg: 'something is worng ....'
+            // }}
             return {'order': 'HB29347', 'age': 19}
         },
         output (req, res, next) {
-            return {'order': 'HB90344', 'age': 23}
+            return {code: 304, msg: 'java.lang.NullPointerException'}
         }
     }
 }
