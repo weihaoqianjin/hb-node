@@ -2,6 +2,10 @@ let express = require('express')
 let app = express()
 let config = require('./config')
 let callback = require('./callback')
+let bodyParser = require('body-parser');
+
+app.use(bodyParser.json());//数据JSON类型
+app.use(bodyParser.urlencoded({ extended: false }));//解析post请求数据
 
 app.use('/static', express.static('static'))
 

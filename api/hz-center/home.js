@@ -10,11 +10,11 @@ module.exports = {
         },
         output (req, res, next) {
             let menuList = []
-            for (let i = 1; i < 60; i++) {
-                menuList.push(i)
+            for (let i = 1; i < 33; i++) {
+                menuList.push({id: i})
             }
             return {
-                code: 0,
+                code: 200,
                 menuList
             }
         }
